@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Tirupati Developer</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+    <link rel="shortcut icon" href="img/loggo.png" type="image/x-icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .property-item {
+            position: relative;
+            display: inline-block;
+        }
+
+        .property-item .hover-image {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            /* Set maximum width to 80% */
+            height: 80%;
+            /* Set maximum height to 80% */
+            max-width: 80%;
+            max-height: 80%;
+            object-fit: cover;
+            /* Ensures the image scales properly */
+            z-index: 10;
+        }
+
+        .property-item:hover .hover-image {
+            display: block;
+        }
+
+        .icon-container {
+            text-align: center;
+            position: relative;
+            margin: 0 20px;
+        }
+
+        .icon-container .icon {
+            padding: 16px;
+            border: 1px solid #000;
+        }
+
+        .icon-container p {
+            margin-top: 8px;
+            color: #000;
+        }
+
+        .hover-image {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .icon-container:hover .hover-image {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar Start -->
+        <div class="container-fluid nav-bar bg-transparent fixed-top">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light py-0 px-4">
+                <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
+                    <div class="icon p-2 me-2">
+                        <img class="img-fluid" src="img/logo.png" alt="Icon" style="width: 230px; height: 40px;">
+                    </div>
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto justify-content-center">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="story.html" class="nav-item nav-link">Our Story</a>
+                        <a href="development.html" class="nav-item nav-link">Our Development</a>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end gap-2">
+                        <button type="button" class="btn btn-outline-primary">
+                            <a href="contact.html" style="font-size:20px;">Enquiry</a>
+                        </button>
+                    </div>
+
+
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar End -->
+
+
+        <!-- Header Start -->
+        <div class="container-fluid header bg-white p-0">
+            <div class="row g-0 align-items-center flex-column-reverse flex-md-row">
+                <div class="col-md-12 p-5 mt-lg-5">
+                    <h1 class="display-5 animated fadeIn mb-4"></h1>
+                    <p class="animated fadeIn mb-4 pb-2">
+                        <img class="img-fluid" src="img/carousel-1.jpg" alt="" height="800px" width="1900px">
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+
+        <!-- information start-->
+
+        <div class="container-fluid header bg-white p-0">
+            <div class="row g-0 align-items-center flex-column-reverse flex-md-row">
+                <div class="col-md-6 p-5 mt-lg-5">
+                    <h1 class="display-5 animated fadeIn mb-4">Project <span class="text-primary">Overview</span></h1>
+                    <p class="animated fadeIn mb-4 pb-2">
+                        Exclusive luxury apartments in the Tallest Tower of Chinsurah, offering elegant design, lush
+                        green
+                        spaces and a comfortable lifestyle.Step into an affluent, community-focused habitat inspired by
+                        ancient
+                        principles of health and prosperity.
+                    </p>
+                    <div class="col-lg-12 col-md-6">
+                        <div class="row g-2 pt-2">
+                            <div class="col-6">
+                                <a class="btn btn-primary py-3 animated fadeIn">B+G+11, Residential & Commercial</a>
+                            </div>
+                            <div class="col-6">
+                                <a class="btn btn-primary py-3 animated fadeIn">Under construction project</a>
+                            </div>
+                            <div class="col-6">
+                                <a class="btn btn-primary py-3 px-4 fadeIn">WBRERA/P/HOO/2023/000280</a>
+                            </div>
+                            <div class="col-6">
+                                <a class="btn btn-primary py-3 px-4 animated fadeIn"> INR 35 Lac onwards </a>
+                            </div>
+                            <div class="col-6 p-3 align-items-center">
+                                <a href="https://drive.google.com/uc?export=download&id=1E2QAhs7mORXR7ZWqHOc-ugYfRCohU9QI"
+                                    class="btn btn-primary py-2 px-4 animated fadeIn">DOWNLOAD BROCHURE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 p-5 mt-lg-5">
+                    <div class="wow fadeInUp" data-wow-delay="0.5s">
+                        <h1 class="display-5 animated fadeIn mb-4">Register <span class="text-primary">Your
+                            </span>Interest</h1>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" placeholder="Enter Your Name"
+                                            required="">
+                                        <label for="name">Enter Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="phone"
+                                            placeholder="Enter Phone Number" required="">
+                                        <label for="phone">Enter Phone Number</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" placeholder="Your Email"
+                                            required="">
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <div class="form-group form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1"
+                                                required="">
+                                            <label class="form-check-label" for="exampleCheck1">I agree to be contacted
+                                                by Tirupati developers on the above supplied phone number and email
+                                                address.</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- information start-->
+
+        <!-- A Purposed Living Start -->
+        <!-- A Purposed Living End -->
+
+        <!-- MASTER PLAN Start -->
+
+        <div class="container-fluid header bg-white p-0">
+            <div class="row g-0 align-items-center flex-column-reverse flex-md-row">
+                <div class="col-md-12 p-5 mt-lg-5">
+                    <h1 class="display-5 animated fadeIn mb-4">Top View</h1>
+                    <p class="animated fadeIn mb-4 pb-2">
+                        <img class="img-fluid" src="img/main.png" alt="" width="1900px">
+                    </p>
+                </div>
+            </div>
+
+            <!-- MASTER PLAN End -->
+
+            <!-- GALLERY Start -->
+
+            <div class="container-xxl py-5">
+                <div class="container">
+                    <div class="row g-0 gx-5 align-items-end">
+                        <div class="col-lg-6">
+                            <div class="text-start mx-auto mb-5 wow slideInLeft" data-wow-delay="0.1s">
+                                <h1 class="mb-3">Gallery</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row g-4">
+                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                    <div class="property-item rounded overflow-hidden">
+                                        <div class="position-relative overflow-hidden">
+                                            <img class="img-fluid" src="img/Gallery.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                                    <div class="property-item rounded overflow-hidden">
+                                        <div class="position-relative overflow-hidden">
+                                            <img class="img-fluid" src="img/Gallery1.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="property-item rounded overflow-hidden">
+                                        <div class="position-relative overflow-hidden">
+                                            <img class="img-fluid" src="img/Gallery2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="property-item rounded overflow-hidden">
+                                        <div class="position-relative overflow-hidden">
+                                            <img class="img-fluid" src="img/Gallery3.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="property-item rounded overflow-hidden">
+                                        <div class="position-relative overflow-hidden">
+                                            <img class="img-fluid" src="img/Gallery4.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="property-item rounded overflow-hidden">
+                                        <div class="position-relative overflow-hidden">
+                                            <img class="img-fluid" src="img/Gallery5.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="property-item rounded overflow-hidden">
+                                        <div class="position-relative overflow-hidden">
+                                            <img class="img-fluid" src="img/Gallery6.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="property-item rounded overflow-hidden">
+                                        <div class="position-relative overflow-hidden">
+                                            <img class="img-fluid" src="img/Gallery7.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="property-item rounded overflow-hidden">
+                                        <div class="position-relative overflow-hidden">
+                                            <img class="img-fluid" src="img/Gallary13.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="property-item rounded overflow-hidden">
+                                        <div class="position-relative overflow-hidden">
+                                            <img class="img-fluid" src="img/Gallary8.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="property-item rounded overflow-hidden">
+                                        <div class="position-relative overflow-hidden">
+                                            <img class="img-fluid" src="img/Gallary9.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="property-item rounded overflow-hidden">
+                                        <div class="position-relative overflow-hidden">
+                                            <img class="img-fluid" src="img/Gallary10.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="property-item rounded overflow-hidden">
+                                        <div class="position-relative overflow-hidden">
+                                            <img class="img-fluid" src="img/Gallary11.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="property-item rounded overflow-hidden">
+                                        <div class="position-relative overflow-hidden">
+                                            <img class="img-fluid" src="img/Gallary12.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GALLERY End -->
+
+            <!-- Amenities start -->
+            <div class="container-xxl py-5">
+                <div class="container">
+                    <div class="row g-0 gx-5 align-items-end">
+                        <div class="col-lg-6">
+                            <div class="text-start mx-auto mb-5">
+                                <h1 class="mb-3">Amenities</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane fade show p-0 active ">
+                            <div class="row g-4">
+
+                                <div class="col-lg-3 pb-lg-0">
+                                    <div class="icon-container">
+                                        <div class="icon">
+                                            <img alt="Icon of a house representing large terrace amenities" height="50"
+                                                src="img/facade.png"
+                                                width="50" />
+                                        </div>
+                                        <p>
+                                            LARGE TERRACE &amp;
+                                            <br />
+                                            AMENITIES
+                                        </p>
+                                        <img alt="Hover image for large terrace amenities" class="hover-image" height="200"
+                                            src="img/terrace.png"
+                                            width="200" />
+                                    </div>
+
+                                    <div class="icon-container">
+                                        <div class="icon">
+                                            <img alt="Icon of a house representing kids play area" height="50"
+                                                src="img/playground.png"
+                                                width="50" />
+                                        </div>
+                                        <p>
+                                            KIDS PLAY &amp;
+                                            <br />
+                                            AREA
+                                        </p>
+                                        <img alt="Hover image for kids play area" class="hover-image" height="200"
+                                        src="img/kids.png"
+                                        width="200" />
+                                    </div>
+
+                                    <div class="icon-container">
+                                        <div class="icon">
+                                            <img alt="Icon of a house representing great arrival lobby"
+                                                height="50"
+                                                src="img/house.png"
+                                                width="50" />
+                                        </div>
+                                        <p>
+                                            GREAT ARRIVAL
+                                            <br />
+                                            LOBBY
+                                        </p>
+                                        <img alt="Hover image for infinity edge great arrival lobby" class="hover-image"
+                                            height="200"
+                                            src="img/lobby.png"
+                                            width="200" />
+                                    </div>
+                                </div>
+
+
+                                <div class="col-lg-3 pb-lg-0">
+                                    <div class="icon-container">
+                                        <div class="icon">
+                                            <img alt="Icon of a house representing covered car parking" height="50"
+                                                src="img/parked-car.png"
+                                                width="50" />
+                                        </div>
+                                        <p>
+                                            COVERED &amp;
+                                            <br />
+                                            CAR PARKING
+                                        </p>
+                                    </div>
+                                    <div class="icon-container">
+                                        <div class="icon">
+                                            <img alt="Icon of a group of people representing community hall" height="50"
+                                                src="img/crowd-of-users.png"
+                                                width="50" />
+                                        </div>
+                                        <p>
+                                            COMMUNITY
+                                            <br />
+                                            HALL
+                                        </p>
+                                        <img alt="Hover image for community hall" class="hover-image" height="200"
+                                            src="img/hall.png"
+                                            width="200" />
+                                    </div>
+                                    <div class="icon-container">
+                                        <div class="icon">
+                                            <img alt="Icon of a group of people representing high speed elevator"
+                                                height="50"
+                                                src="img/elevator.png"
+                                                width="50" />
+                                        </div>
+                                        <p>
+                                            HIGH SPEED
+                                            <br />
+                                            ELEVATORS
+                                        </p>
+                                        <img alt="Hover image for infinity edge high speed elevator" class="hover-image"
+                                            height="200"
+                                            src="img/elevator1.png"
+                                            width="200" />
+                                    </div>
+                                </div>
+
+
+                                <div class="col-lg-3 pb-4 pb-lg-0">
+                                    <div class="icon-container">
+                                        <div class="icon">
+                                            <img alt="Icon of a house representing excellent location" height="50"
+                                                src="img/location.png"
+                                                width="50" />
+                                        </div>
+                                        <p>
+                                            EXCELLENT &amp;
+                                            <br />
+                                            LOCATION
+                                        </p>
+                                        <img alt="Hover image for excellent location" class="hover-image" height="200"
+                                            src="img/map.png"
+                                            width="200" />
+                                    </div>
+                                    <div class="icon-container">
+                                        <div class="icon">
+                                            <img alt="Icon of a swimming pool representing infinity edge swimming pool"
+                                                height="50"
+                                                src="img/pool.png"
+                                                width="50" />
+                                        </div>
+                                        <p>
+                                            INFINITY EDGE
+                                            <br />
+                                            SWIMMING POOL
+                                        </p>
+                                        <img alt="Hover image for infinity edge swimming pool" class="hover-image"
+                                            height="200"
+                                            src="img/pool1.png"
+                                            width="200" />
+                                    </div>
+                                    <div class="icon-container">
+                                        <div class="icon">
+                                            <img alt="Icon of a group of people representing 24 hrs. security" height="50"
+                                                src="img/lock.png"
+                                                width="50" />
+                                        </div>
+                                        <p>
+                                            24 HRS.
+                                            <br />
+                                            SECURITY
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Amenities end -->
+
+            <!-- Location Proximities start -->
+
+            <div class="container-xxl py-5">
+                <div class="container">
+                    <div class="row g-0 gx-5 align-items-end">
+                        <div class="col-lg-6">
+                            <div class="text-start mx-auto mb-5 wow slideInLeft" data-wow-delay="0.1s">
+                                <h2 class="mb-3">Location</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12 pb-4 pb-lg-0">
+
+                                    <iframe style="width: 100%; height: 400px;"
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.7298378105033!2d88.3803652!3d22.886436300000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89167d3b4071b%3A0xaafade99e3b10c9a!2sThe%20Azure!5e0!3m2!1sen!2sin!4v1742839550722!5m2!1sen!2sin"
+                                        frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                                        tabindex="0"></iframe>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <h5 class="text-white mb-4">Developers Office</h5>
+                                    <p class="mb-2"><i class="fa-solid fa-train-subway me-3"></i><b style="color: #000;">Railway Station:</b> 4min(1.2 Km)</p>
+                                    <p class="mb-2"><i class="fa-solid fa-school me-3"></i><b style="color: #000;">School:</b> 4min(1.2 Km)</p>
+                                    <p class="mb-2"><i class="fa-solid fa-hospital me-3"></i><b style="color: #000;">Hospital:</b> 7min(2.6 Km)</p>
+                                    <p class="mb-2"><i class="fa-solid fa-store me-3"></i><b style="color: #000;">Shopping Mall:</b> 6min(1.9 Km)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Location Proximities end -->
+
+
+            <!-- Footer Start -->
+            <div class="container-fluid bg-dark text-white-50 footer wow fadeIn" data-wow-delay="0.1s">
+                <div class="container py-5">
+                    <div class="row g-5">
+                        <div class="col-lg-6 col-md-6">
+                            <h5 class="text-white mb-4">Developers Office</h5>
+                            <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Apanjan Super Market, N.S. Road,
+                                Chinsurah, Hoogly 712101</p>
+                            <p class="mb-2"><i class="fa fa-id-card me-3"></i>Registration no.F008092/2022</p>
+                            <p class="mb-2"><i class="fa fa-balance-scale me-3"></i>GSTIN: 19AANFT6551C1ZX</p>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end mb-3 mb-md-0">
+                            <h5 class="text-white mb-4">Project Location</h5>
+                            <p class="mb-2"><i class="fa fa-map-marked-alt me-3"></i>G.T. Road, Khadinamore Chinsurah,
+                                Hoogly 712102</p>
+                                <p class="mb-2">The Azure</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="copyright">
+                        <div class="row">
+                            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                                &copy; <a class="border-bottom" href="#">Tirupati Developers</a>, All Right Reserved.
+                            </div>
+
+                            <div class="col-md-6 text-center text-md-end mb-3 mb-md-0">
+                                Designed By <a class="border-bottom" href="https://www.sgwebapp.com/">SG Web App
+                                    Techniques Pvt. Ltd.</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer End -->
+
+
+            <!-- Back to Top -->
+            <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+        </div>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Tirupati Developer</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/> -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+    <link rel="shortcut icon" href="img/loggo.png" type="image/x-icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .btn-social {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 20px;
+            transition: all 0.3s ease-in-out;
+        }
+        .btn-social:hover {
+            transform: scale(1.1);
+        }
+        .whatsapp { color: #25D366; border-color: #25D366; }
+        .whatsapp:hover { background: #25D366; color: white; }
+        .facebook { color: #1877F2; border-color: #1877F2; }
+        .facebook:hover { background: #1877F2; color: white; }
+        .linkedin { color: #0077B5; border-color: #0077B5; }
+        .linkedin:hover { background: #0077B5; color: white; }
+        .youtube { color: #FF0000; border-color: #FF0000; }
+        .youtube:hover { background: #FF0000; color: white; }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        nav {
+            border-bottom: 1px solid #e2e2e2;
+            margin-bottom: 20px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid transparent;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #4a4a4a;
+        }
+
+        nav ul li a:hover {
+            color: #6a6a6a;
+        }
+
+        nav ul li.active {
+            border-bottom: 2px solid #1a1a1a;
+        }
+
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .flex .half {
+            width: 100%;
+            padding: 10px;
+        }
+
+        .flex .half img {
+            width: 100%;
+            height: auto;
+        }
+
+        .flex .half h2 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .flex .half p {
+            color: #6a6a6a;
+            margin-bottom: 20px;
+        }
+
+        .flex .half button {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        @media (min-width: 768px) {
+            .flex .half {
+                width: 50%;
+            }
+
+            .flex .half:first-child {
+                padding-right: 20px;
+            }
+
+            .flex .half:last-child {
+                padding-left: 20px;
+            }
+        }
+
+        .sp-box-shadow {
+            box-shadow: 0 2px 3px 0 #e3e3e3;
+            height: 3px;
+            margin-top: -3px;
+        }
+
+        .nav-tabs {
+            border-bottom: none;
+            margin: 0 auto;
+            display: table;
+        }
+
+        .nav-tabs>li {
+            float: left;
+            margin-bottom: -1px;
+            padding: 0 5px;
+        }
+
+        .nav>li {
+            position: relative;
+            display: block;
+        }
+
+        .nav-tabs>li.active>a,
+        .nav-tabs>li.active>a:focus,
+        .nav-tabs>li.active>a:hover {
+            color: #071C35;
+            cursor: pointer;
+            background-color: #fff;
+            border: none;
+            border-bottom: 2px solid #071C35;
+        }
+
+        .nav-tabs>li>a {
+            margin-right: 2px;
+            line-height: 1.42857143;
+            border: none;
+            border-radius: 4px 4px 0 0;
+            text-transform: uppercase;
+            font-size: 16px;
+            color: #000;
+        }
+
+        .nav>li>a {
+            position: relative;
+            display: block;
+            padding: 10px 15px;
+        }
+
+        .fadeInUp .animation {
+            opacity: 1;
+            transform: translate3d(0px, 0px, 0px);
+        }
+
+
+        element.style {
+            animation-delay: 1.3s;
+        }
+
+        
+.prop-block {
+	margin-bottom: 20px;
+}
+
+.prop-block {
+	-webkit-transition: all 2s ease-in-out;
+	-moz-transition: all 2s ease-in-out;
+	-ms-transition: all 2s ease-in-out;
+	transition: all 2s ease-in-out;
+}
+
+.prop-block:hover img {
+	-webkit-transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-ms-transition: all 0.8s ease-in-out;
+	transition: all 0.8s ease-in-out;
+	transform: scale(1.03);
+}
+
+.prop-block section {
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 16px;
+	letter-spacing: 2px;
+	padding: 5px 0;
+	display: flex;
+	position: relative;
+}
+
+.prop-block:hover section {
+	/* -webkit-transition: all 0.2s ease-in-out; */
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	/* transition: all 0.2s ease-in-out; */
+	/* margin-top: 5px; */
+}
+
+.prop-block:hover section:after {
+	width: 110px;
+	transition: all 1s ease-in-out;
+}
+
+.prop-block section:after {
+	display: block;
+	content: "";
+	height: 1px;
+	width: 80px;
+	background-color: #9d9d9c;
+	right: 0;
+	position: absolute;
+	top: 17px;
+}
+
+.prop-block section span.comm-name {
+	padding-left: 10px;
+	margin-left: 8px;
+	position: relative;
+	padding-right: 90px;
+}
+
+.prop-block section span.comm-name:before {
+	border-left: 1px solid #232323;
+	display: inline-block;
+	content: "";
+	width: 1px;
+	height: 85%;
+	position: absolute;
+	left: 0;
+	top: 2px;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <!-- <div id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div> -->
+        <!-- Spinner End -->
+
+        <!-- Top Header start -->
+        <div class="container-fluid nav-bar bg-transparent fixed-top">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light py-0 px-4">
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="index.html" class="nav-item nav-link">Customers’ Section</a>
+                        <a href="story.html" class="nav-item nav-link"> Video Gallery</a>
+                    </div>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a class="btn btn-outline-light btn-social facebook" href="https://www.facebook.com/TheAzureChinsurah" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social linkedin" href="https://www.linkedin.com/in/sanjay-naiknaware-ba927534b" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social youtube" href="https://youtu.be/rm0ZMur5ZAY?feature=shared" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Top Header End -->
+
+        <!-- Navbar Start -->
+        <div class="container-fluid nav-bar bg-transparent fixed-top">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light py-0 px-4">
+                <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
+                    <div class="icon p-2 me-2">
+                        <img class="img-fluid" src="img/logo.png" alt="Icon" style="width: 230px; height: 40px;">
+                    </div>
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto justify-content-center">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="story.html" class="nav-item nav-link">Our Story</a>
+                        <a href="development.html" class="nav-item nav-link">Our Development</a>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end gap-2">
+                        <button type="button" class="btn btn-outline-primary">
+                            <a href="contact.html" style="font-size:20px;">Enquiry</a>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar End -->
+
+        <!-- Carousel Start -->
+        <div class="container-fluid overflow-hidden px-0">
+            <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <!-- First Carousel-->
+                    <div class="carousel-item active">
+                        <img src="img/carousel-3.jpg" class="img-fluid w-100" alt="First slide" style="height:600px;" />
+                        <div class="carousel-caption">
+                            <h1 class="display-6 text-white mb-4 fadeInUp animate__animated" 
+                              data-animation="fadeInUp" data-delay="0.1s" style="animation-delay: 0.1s">
+                              MAKING A DIFFERENCE TO THE <i>LIFESTYLE</i></h1>
+                        </div>
+                    </div>
+
+                    <!--Second Carousel-->
+                    <div class="carousel-item">
+                        <img src="img/carousel-2.jpg" class="img-fluid w-100" alt="Second slide" style="height:600px;" />
+                        <div class="carousel-caption">
+                            <h1 class="display-6 text-white mb-4 fadeInUp animate__animated"
+                                data-animation="fadeInUp" data-delay="0.1s" style="animation-delay: 0.1s;">
+                                CRAFTING MEMORABLE <i>EXPERIENCE</i>
+                            </h1>
+                        </div>
+                    </div>
+
+                    <!--Third Carousel-->
+                    <div class="carousel-item">
+                        <img src="img/carousel-4.jpg" class="img-fluid w-100" alt="Third slide" style="height:600px;" />
+                        <div class="carousel-caption">
+                            <h1 class="display-7 text-white mb-4 fadeInUp animate__animated"
+                                data-animation="fadeInUp" data-delay="0.1s" style="animation-delay: 1.3s;">
+                                IT'S ONLY WHEN YOU UNDERSTAND YOUR <i>CUSTOMERS</i>
+                            </h1>
+                        </div>
+                    </div>
+
+                     <!--Fourth Carousel-->
+                    <div class="carousel-item">
+                        <img src="img/carousel-5.jpg" class="img-fluid w-100" alt="Second slide" style="height:600px;" />
+                        <div class="carousel-caption">
+                            <h1 class="display-7 text-white mb-4 fadeInUp animate__animated"
+                                data-animation="fadeInUp" data-delay="0.1s" style="animation-delay: 1.3s;">
+                                THAT YOU ARE ABLE TO GO BEYOND THEIR <i>EXPECTATIONS</i>
+                            </h1>
+                        </div>
+                    </div>
+
+                     <!--Fifth Carousel-->
+                    <div class="carousel-item">
+                        <img src="img/carousel-6.png" class="img-fluid" alt="Second slide" style="height:600px;" />
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel End -->
+
+        <!-- Header Start -->
+        <div class="container-fluid header bg-white p-0">
+            <div class="row g-0 align-items-center flex-column-reverse flex-md-row">
+                <div class="col-md-4 p-5 mt-lg-5">
+                    <h1 class="display-5 animated fadeIn mb-4">FEATURED <span class="text-primary">PROJECTS</span></h1>
+                    <p class="animated fadeIn mb-4 pb-2">Our properties each have their own unique design aesthetic,
+                        providing an aspirational lifestyle, supported by Tirupati Developer's management team.</p>
+                    <a href="development.html" class="btn btn-primary py-3 px-5 animated fadeIn">View All Properties</a>
+                </div>
+                <div class="col-md-8 animated fadeIn p-5 mt-lg-5">
+                    <div class="container-xxl py-5">
+                        <div class="container">
+                            <div class="tab-content">
+                                <div class="row g-4">
+
+                                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                                        <div class="prop-block scroll-animate" data-wow-duration="3s" data-wow-delay="2s">
+                                            <a target="_blank"  href="">
+                                                <a href="citysky.html"><img class="img-fluid" src="img/city sky view.png" alt=""></a>
+                                            </a>
+                                            <section>
+                                                <h5>CITY SKY VIEW</h5>
+                                                <span class="comm-name">NS Road Chinsurah </span>
+                                            </section>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                                        <div class="prop-block scroll-animate" data-wow-duration="3s" data-wow-delay="2s">
+                                            <a target="_blank"  href="">
+                                                <a href="azure.html"><img class="img-fluid" src="img/azure.png" alt=""></a>
+                                            </a>
+                                            <section>
+                                                <h5>The Azure</h5>
+                                                <span class="comm-name"> Khadinamore Chinsurah </span>
+                                            </section>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                                        <div class="prop-block scroll-animate" data-wow-duration="3s" data-wow-delay="2s">
+                                            <a target="_blank"  href="">
+                                                <a href="development.html"><img class="img-fluid" src="img/rupali.png" alt=""></a>
+                                            </a>
+                                            <section>
+                                                <h5>Rupali Arcade</h5>
+                                                <span class="comm-name"> NS Road Chinsurah </span>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+
+        <!-- Card Slider Start -->
+
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Our Featured Properties</h1>
+                    <p>Explore our latest and most sought-after properties offering an exclusive lifestyle.</p>
+                </div>
+                <div class="owl-carousel card-slider wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="property-item rounded overflow-hidden">
+                        <div class="sp-fea-box">
+                            <div class="bg-primary rounded text-white sp-tag">Residential</div>
+                            <div class="position-relative overflow-hidden">
+                                <img class="img-fluid" src="img/city gloria.png" alt="">
+                            </div>
+                            <div class="p-4">
+                                <h5 class="text-primary mb-3">City Gloria</h5>
+                                <p>Typology: 2BHK & 3BHK | Price: Sold Out</p>
+                            </div>
+                            <div class="sp-fea-btn">
+                                <a href="development.html" target="_blank">View More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="property-item rounded overflow-hidden">
+                        <div class="sp-fea-box">
+                            <div class="bg-primary rounded text-white sp-tag">Residential</div>
+                            <div class="position-relative overflow-hidden">
+                                <img class="img-fluid" src="img/city heights.png" alt="">
+                            </div>
+                            <div class="p-4">
+                                <h5 class="text-primary mb-3">City Heights</h5>
+                                <p>Typology: 2BHK & 3BHK | Price: Sold Out</p>
+                            </div>
+                            <div class="sp-fea-btn">
+                                <a href="development.html" target="_blank">View More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="property-item rounded overflow-hidden">
+                        <div class="sp-fea-box">
+                            <div class="bg-primary rounded text-white sp-tag">Commercial</div>
+                            <div class="position-relative overflow-hidden">
+                                <img class="img-fluid" src="img/rupali.png" alt="">
+                            </div>
+                            <div class="p-4">
+                                <h5 class="text-primary mb-3">Rupali Arcade</h5>
+                                <p>Typology: 2BHK & 3BHK | Price: Sold Out</p>
+                            </div>
+                            <div class="sp-fea-btn">
+                                <a href="development.html" target="_blank">View More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="property-item rounded overflow-hidden">
+                        <div class="sp-fea-box">
+                            <div class="bg-primary rounded text-white sp-tag">Residential & Commercial</div>
+                            <div class="position-relative overflow-hidden">
+                                <img class="img-fluid" src="img/city prestige.png" alt="">
+                            </div>
+                            <div class="p-4">
+                                <h5 class="text-primary mb-3">Chandranila Apartments</h5>
+                                <p>Typology: 2BHK & 3BHK | Price: Sold Out</p>
+                            </div>
+                            <div class="sp-fea-btn">
+                                <a href="development.html" target="_blank">View More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Card Slider End -->
+
+        <!-- Testimonial Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Our Clients Speak!</h1>
+                    <p>
+                        Finding you the perfect home, selling for top value, and making every real estate journey
+                        smooth, stress-free, and successful.
+                    </p>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+
+                    <div class="testimonial-item bg-light rounded p-3">
+                        <div class="bg-white border rounded p-4">
+                            <p>
+                                It was indeed a great experience purchasing my new home in Chinsurah
+                                for my family and me, matching the standards of any top metro city in India.
+                                I am thankful to Tirupati Developers for being so cooperative since I'm based
+                                out of Bengaluru. Not once it felt like a disadvantage.
+
+
+
+
+
+
+
+
+
+
+                                <br>
+
+
+
+
+
+
+
+
+
+
+                                <br>
+                            </p>
+                            <div class="d-flex align-items-center">
+                                <div class="ps-3">
+                                    <h6 class="fw-bold mb-1">-- Prof. (Dr.) Chiradeep Basak, NLSIU Bengaluru. </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-item bg-light rounded p-3">
+                        <div class="bg-white border rounded p-4">
+                            <p>
+                                Searching for a dream home within Chinsurah with all latest amenities adding
+                                to the aristocratic lifestyle is a critical job for anybody. We knew this but
+                                still ventured into it looking for something close to our heart. Thank you Tirupati
+                                Developers for The Azure project which meets all my needs and standard.
+                            </p>
+                            <div class="d-flex align-items-center">
+                                <!-- <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-2.jpg" style="width: 45px; height: 45px;"> -->
+                                <div class="ps-3">
+                                    <h6 class="fw-bold mb-1">-- Justice Sourav Bhattacharya</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-item bg-light rounded p-3">
+                        <div class="bg-white border rounded p-4">
+                            <p>
+                                We wanted to build a small nest of our own. The Azure project provided us exactly with
+                                that opportunity.
+
+
+
+                                <br>
+
+
+
+
+
+
+
+
+
+
+
+                                <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                <br>
+                            </p>
+                            <div class="d-flex align-items-center">
+                                <!-- <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-3.jpg" style="width: 45px; height: 45px;"> -->
+                                <div class="ps-3">
+                                    <h6 class="fw-bold mb-1">-- Prof. (Dr.) Alok Ghoshal</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-6 col-md-6">
+                        <h5 class="text-white mb-4">Developers Office</h5>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Apanjan Super Market, N.S. Road,
+                            Chinsurah, Hoogly 712101</p>
+                        <p class="mb-2"><i class="fa fa-id-card me-3"></i>Registration no.F008092/2022</p>
+                        <p class="mb-2"><i class="fa fa-balance-scale me-3"></i>GSTIN: 19AANFT6551C1ZX</p>
+                    </div>
+
+
+                    <div class="col-md-6 text-center text-md-end mb-3 mb-md-0">
+                        <h5 class="text-white mb-4">Project Location</h5>
+                        <p class="mb-2"><i class="fa fa-map-marked-alt me-3"></i>G.T. Road, Khadinamore Chinsurah,
+                            Hoogly 712102</p>
+                            <p class="mb-2">The Azure</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">Tirupati</a>, All Right Reserved.
+                        </div>
+
+                        <div class="col-md-6 text-center text-md-end mb-3 mb-md-0">
+                            Designed By <a class="border-bottom" href="https://www.sgwebapp.com/">SG Web App
+                                Techniques Pvt. Ltd.</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".card-slider").owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: true,
+                dots: false,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                responsive: {
+                    0: { items: 1 },
+                    768: { items: 2 },
+                    1024: { items: 3 }
+                }
+            });
+        });
+
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.classList.add('hidden');
+            });
+            document.getElementById(sectionId).classList.remove('hidden');
+
+            const navItems = document.querySelectorAll('nav ul li');
+            navItems.forEach(item => {
+                item.classList.remove('active');
+            });
+            event.target.parentElement.classList.add('active');
+        }
+    </script>
+</body>
+
+</html>
