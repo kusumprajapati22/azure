@@ -7,6 +7,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -32,30 +33,61 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <style>
-    .property-item {
-        position: relative;
-        display: inline-block;
-    }
-    
-    .property-item .hover-image {
-        display: none;
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 80%;  /* Set maximum width to 80% */
-        height: 80%; /* Set maximum height to 80% */
-        max-width: 80%;
-        max-height: 80%;
-        object-fit: cover; /* Ensures the image scales properly */
-        z-index: 10;
-    }
-    
-    .property-item:hover .hover-image {
-        display: block;
-    }
-    
+        .property-item {
+            position: relative;
+            display: inline-block;
+        }
 
+        .property-item .hover-image {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            /* Set maximum width to 80% */
+            height: 80%;
+            /* Set maximum height to 80% */
+            max-width: 80%;
+            max-height: 80%;
+            object-fit: cover;
+            /* Ensures the image scales properly */
+            z-index: 10;
+        }
+
+        .property-item:hover .hover-image {
+            display: block;
+        }
+
+        .icon-container {
+            text-align: center;
+            position: relative;
+            margin: 0 20px;
+        }
+
+        .icon-container .icon {
+            padding: 16px;
+            border: 1px solid #000;
+        }
+
+        .icon-container p {
+            margin-top: 8px;
+            color: #000;
+        }
+
+        .hover-image {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .icon-container:hover .hover-image {
+            display: block;
+        }
     </style>
 </head>
 
@@ -84,7 +116,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto justify-content-center">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="index.html" class="nav-item nav-link">Home</a>
                         <a href="story.html" class="nav-item nav-link">Our Story</a>
                         <a href="development.html" class="nav-item nav-link">Our Development</a>
                     </div>
@@ -107,7 +139,7 @@
                 <div class="col-md-12 p-5 mt-lg-5">
                     <h1 class="display-5 animated fadeIn mb-4"></h1>
                     <p class="animated fadeIn mb-4 pb-2">
-                        <img class="img-fluid" src="img/carousel-1.jpg" alt="" height="600px" width="1900px">
+                        <img class="img-fluid" src="img/view1.jpg" alt="" width="1900px">
                     </p>
                 </div>
             </div>
@@ -130,19 +162,17 @@
                     <div class="col-lg-12 col-md-6">
                         <div class="row g-2 pt-2">
                             <div class="col-6">
-                                <a class="btn btn-primary py-3 animated fadeIn">B+G+11, Residential & Commercial</a>
+                                <a class="btn btn-primary py-3 animated fadeIn">G+4, Residential</a>
                             </div>
                             <div class="col-6">
                                 <a class="btn btn-primary py-3 animated fadeIn">Under construction project</a>
                             </div>
                             <div class="col-6">
-                                <a class="btn btn-primary py-3 px-4 fadeIn">WBRERA/P/HOO/2023/000280</a>
-                            </div>
-                            <div class="col-6">
-                                <a class="btn btn-primary py-3 px-4 animated fadeIn"> INR 35 Lac onwards </a>
+                                <a class="btn btn-primary py-3 px-4 animated fadeIn"> INR 23 Lac onwards </a>
                             </div>
                             <div class="col-6 p-3 align-items-center">
-                                <a href="https://drive.google.com/uc?export=download&id=1E2QAhs7mORXR7ZWqHOc-ugYfRCohU9QI" class="btn btn-primary py-2 px-4 animated fadeIn">DOWNLOAD BROCHURE</a>
+                                <a href="https://drive.google.com/uc?export=download&id=1Xww7Ao0uWmbwDylzD0ccdrzTR8kt1TDH"
+                                    class="btn btn-primary py-2 px-4 animated fadeIn">DOWNLOAD BROCHURE</a>
                             </div>
                         </div>
                     </div>
@@ -197,105 +227,67 @@
         </div>
         <!-- information start-->
 
-        <!-- A Purposed Living Start -->
-        <!-- A Purposed Living End -->
-
         <!-- MASTER PLAN Start -->
 
         <div class="container-fluid header bg-white p-0">
             <div class="row g-0 align-items-center flex-column-reverse flex-md-row">
                 <div class="col-md-12 p-5 mt-lg-5">
-                    <h1 class="display-5 animated fadeIn mb-4">Top View</h1>
+                    <h1 class="display-5 animated fadeIn mb-4">Front View</h1>
                     <p class="animated fadeIn mb-4 pb-2">
-                        <img class="img-fluid" src="img/main.png" alt="" width="1900px">
+                        <img class="img-fluid" src="img/front.jpg" alt="" width="1900px">
                     </p>
                 </div>
             </div>
 
-            <div class="container-fluid header bg-white p-0">
-                <div class="row g-0 justify-content-center flex-column-reverse flex-md-row">
-                    <div class="col-md-12 p-5 mt-lg-5 justify-content-center">
-                        <a href="development.html" class="btn btn-primary py-3 px-5 animated fadeIn">View All
-                            Properties</a>
-                    </div>
-                </div>
-            </div>
             <!-- MASTER PLAN End -->
 
-            <!-- GALLERY Start -->
+            <!-- Ground Floor start -->
 
             <div class="container-xxl py-5">
                 <div class="container">
                     <div class="row g-0 gx-5 align-items-end">
                         <div class="col-lg-6">
                             <div class="text-start mx-auto mb-5 wow slideInLeft" data-wow-delay="0.1s">
-                                <h1 class="mb-3">Gallery</h1>
+                                <h1 class="mb-3">Ground Floor</h1>
                             </div>
                         </div>
+    
                     </div>
                     <div class="tab-content">
-                        <div id="tab-1" class="tab-pane fade show p-0 active">
-                            <div class="row g-4">
-                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                                    <div class="property-item rounded overflow-hidden">
+                        <div class="row g-4">
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="sp-fea-box">
+                                        <div class="bg-primary rounded text-white sp-tag">Residential & Commercial</div>
                                         <div class="position-relative overflow-hidden">
-                                            <img class="img-fluid" src="img/Gallery.png" alt="">
+                                            <img class="img-fluid" src="img/azure.png" alt="">
+                                        </div>
+                                        <div class="p-4">
+                                            <h3 class="text-primary mb-3">The Azure</h3>
+                                            <ul>
+                                                <h5>No. of Flats: 118</h5>
+                                                <h5>Typology: 2BHK & 3BHK</h5>
+                                                <h5>Price: INR 35L onwards</h5>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
-
-                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                                    <div class="property-item rounded overflow-hidden">
+                            </div>
+    
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="sp-fea-box">
+                                        <div class="bg-primary rounded text-white sp-tag">Residential</div>
                                         <div class="position-relative overflow-hidden">
-                                            <img class="img-fluid" src="img/Gallery1.png" alt="">
+                                            <img class="img-fluid" src="img/city heaven.png" alt="">
                                         </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                                    <div class="property-item rounded overflow-hidden">
-                                        <div class="position-relative overflow-hidden">
-                                            <img class="img-fluid" src="img/Gallery2.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                                    <div class="property-item rounded overflow-hidden">
-                                        <div class="position-relative overflow-hidden">
-                                            <img class="img-fluid" src="img/Gallery3.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                                    <div class="property-item rounded overflow-hidden">
-                                        <div class="position-relative overflow-hidden">
-                                            <img class="img-fluid" src="img/Gallery4.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                                    <div class="property-item rounded overflow-hidden">
-                                        <div class="position-relative overflow-hidden">
-                                            <img class="img-fluid" src="img/Gallery5.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                                    <div class="property-item rounded overflow-hidden">
-                                        <div class="position-relative overflow-hidden">
-                                            <img class="img-fluid" src="img/Gallery6.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                                    <div class="property-item rounded overflow-hidden">
-                                        <div class="position-relative overflow-hidden">
-                                            <img class="img-fluid" src="img/Gallery7.png" alt="">
+                                        <div class="p-4">
+                                        <h3 class="text-primary mb-3">City Heaven</h3>
+                                            <ul>
+                                                <h5>No. of Flats: </h5>
+                                                <h5>Typology: 2BHK & 3BHK</h5>
+                                                <h5>Price: INR 35L onwards</h5>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
@@ -305,105 +297,112 @@
                 </div>
             </div>
 
-            <!-- GALLERY End -->
+            <!-- gallery floor end -->
 
             <!-- Amenities start -->
             <div class="container-xxl py-5">
                 <div class="container">
                     <div class="row g-0 gx-5 align-items-end">
                         <div class="col-lg-6">
-                            <div class="text-start mx-auto mb-5 wow slideInLeft" data-wow-delay="0.1s">
+                            <div class="text-start mx-auto mb-5">
                                 <h1 class="mb-3">Amenities</h1>
                             </div>
                         </div>
                     </div>
                     <div class="tab-content">
-                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                        <div id="tab-1" class="tab-pane fade show p-0 active ">
                             <div class="row g-4">
-                                <div class="col-lg-3 wow fadeInUp d-flex justify-content-between" data-wow-delay="0.1s">
-                                    <div class="property-item rounded overflow-hidden">
-                                        <div class="position-relative overflow-hidden">
-                                            <a href=""><img class="img-fluid" src="img/corridor.png" alt=""></a>
-                                            <h5 class="p-2" style="color: black;">GREAT ARRIVAL LOBBY</h5>
+
+                                <div class="col-lg-3 pb-lg-0">
+
+                                    <div class="icon-container">
+                                        <div class="icon">
+                                            <img alt="Icon of a house representing ample green space"
+                                                height="50"
+                                                src="img/leaf1.png"
+                                                width="50" />
                                         </div>
+                                        <p>
+                                            AMPLE GREEN
+                                            <br />
+                                            SPACE
+                                        </p>
                                     </div>
+
+                                    <div class="icon-container">
+                                        <div class="icon">
+                                            <img alt="Icon of a group of people representing high speed elevator"
+                                                height="50"
+                                                src="img/lift1.png"
+                                                width="50" />
+                                        </div>
+                                        <p>
+                                            HIGH SPEED
+                                            <br />
+                                            ELEVATORS
+                                        </p>
+                                    </div>
+
                                 </div>
 
 
-                                <div class="col-lg-3 wow fadeInUp d-flex justify-content-between" data-wow-delay="0.3s">
-                                    <div class="property-item rounded overflow-hidden">
-                                        <div class="position-relative overflow-hidden">
-                                            <a href=""><img class="img-fluid" src="img/elevator.png" alt=""></a>
-                                            <img class="hover-image" src="img/main.png" alt="Popup">
-
-                                            <h5 class="p-2" style="color: black;">HIGH SPEED ELEVATORS</h5>
+                                <div class="col-lg-3 pb-lg-0">
+                                    <div class="icon-container">
+                                        <div class="icon">
+                                            <img alt="Icon of a house representing covered car parking" height="50"
+                                                src="img/parking1.png"
+                                                width="50" />
                                         </div>
+                                        <p>
+                                            COVERED &amp;
+                                            <br />
+                                            CAR PARKING
+                                        </p>
                                     </div>
+                                    <div class="icon-container">
+                                        <div class="icon">
+                                            <img alt="Icon of a group of people representing community hall" height="50"
+                                                src="img/hall1.png"
+                                                width="50" />
+                                        </div>
+                                        <p>
+                                            COMMUNITY
+                                            <br />
+                                            HALL
+                                        </p>
+                                    </div>
+                                   
                                 </div>
 
-                                <div class="col-lg-3 wow fadeInUp d-flex justify-content-between" data-wow-delay="0.5s">
-                                    <div class="property-item rounded overflow-hidden">
-                                        <div class="position-relative overflow-hidden">
-                                            <a href=""><img class="img-fluid" src="img/cyber-security.png" alt=""></a>
-                                            <h4 class="p-2" style="color: black;">24 HRS. SECURITY</h4>
-                                        </div>
-                                    </div>
-                                </div>
 
-                                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                                    <div class="property-item rounded overflow-hidden">
-                                        <div class="position-relative overflow-hidden">
-                                            <a href=""><img class="img-fluid" src="img/mansion.png" alt=""></a>
-                                            <h5 class="p-2" style="color: black;">PRIVATE & HOMELY</h5>
+                                <div class="col-lg-3 pb-4 pb-lg-0">
+                                    <div class="icon-container">
+                                        <div class="icon">
+                                            <img alt="Icon of a house representing excellent location" height="50"
+                                                src="img/map1.png"
+                                                width="50" />
                                         </div>
+                                        <p>
+                                            EXCELLENT &amp;
+                                            <br />
+                                            LOCATION
+                                        </p>
                                     </div>
-                                </div>
-
-                                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                                    <div class="property-item rounded overflow-hidden">
-                                        <div class="position-relative overflow-hidden">
-                                            <a href=""><img class="img-fluid" src="img/teamwork.png" alt=""></a>
-                                            <h5 class="p-2" style="color: black;">COMMUNITY HALL</h5>
+                                  
+                                    <div class="icon-container">
+                                        <div class="icon">
+                                            <img alt="Icon of a group of people representing 24 hrs. security" height="50"
+                                                src="img/lock1.png"
+                                                width="50" />
                                         </div>
+                                        <p>
+                                            24 HRS.
+                                            <br />
+                                            SECURITY
+                                        </p>
                                     </div>
+                                    
                                 </div>
-
-                                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                                    <div class="property-item rounded overflow-hidden">
-                                        <div class="position-relative overflow-hidden">
-                                            <a href=""><img class="img-fluid" src="img/swimming-pool.png" alt=""></a>
-                                            <h5 class="p-2" style="color: black;">INFINITY EDGE SWIMMING POOL</h5>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                                    <div class="property-item rounded overflow-hidden">
-                                        <div class="position-relative overflow-hidden">
-                                            <a href=""><img class="img-fluid" src="img/balcony.png" alt=""></a>
-                                            <h5 class="p-2" style="color: black;">LARGE TERRACE AMENITIES</h5>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                                    <div class="property-item rounded overflow-hidden">
-                                        <div class="position-relative overflow-hidden">
-                                            <a href=""><img class="img-fluid" src="img/parking.png" alt=""></a>
-                                            <h5 class="p-2" style="color: black;">COVERED CAR PARKING</h5>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                                    <div class="property-item rounded overflow-hidden">
-                                        <div class="position-relative overflow-hidden">
-                                            <a href=""><img class="img-fluid" src="img/map.png" alt=""></a>
-                                            <h5 class="p-2" style="color: black;">EXCELLENT LOCATION</h5>
-                                        </div>
-                                    </div>
-                                </div>
-
                             </div>
                         </div>
                     </div>
@@ -419,60 +418,22 @@
                     <div class="row g-0 gx-5 align-items-end">
                         <div class="col-lg-6">
                             <div class="text-start mx-auto mb-5 wow slideInLeft" data-wow-delay="0.1s">
-                                <h1 class="mb-3">Location Proximities</h1>
+                                <h2 class="mb-3">Location</h2>
                             </div>
                         </div>
                     </div>
-                    <div class="tab-content">
-                        <div id="tab-1" class="tab-pane fade show p-0 active">
-                            <div class="row g-4">
-                                <!-- <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                                            <div class="property-item rounded overflow-hidden">
-                                                <div class="position-relative overflow-hidden">
-                                                    <a href=""><img class="img-fluid" src="img/property-1.jpg" alt=""></a>
-                                                </div>
-                                            </div>
-                                        </div> -->
-
-                                <!-- <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                                            <div class="property-item rounded overflow-hidden">
-                                                <div class="position-relative overflow-hidden">
-                                                    <a href=""><img class="img-fluid" src="img/property-2.jpg" alt=""></a>
-                                                </div>
-                                            </div>
-                                        </div> -->
-
-                                <!-- <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                                            <div class="property-item rounded overflow-hidden">
-                                                <div class="position-relative overflow-hidden">
-                                                    <a href=""><img class="img-fluid" src="img/property-3.jpg" alt=""></a>
-                                                </div>
-                                            </div>
-                                        </div> -->
-
-                                <!-- <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                                            <div class="property-item rounded overflow-hidden">
-                                                <div class="position-relative overflow-hidden">
-                                                    <a href=""><img class="img-fluid" src="img/property-6.jpg" alt=""></a>
-                                                </div>
-                                            </div>
-                                        </div> -->
-
-                                <!-- <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                                            <div class="property-item rounded overflow-hidden">
-                                                <div class="position-relative overflow-hidden">
-                                                    <a href=""><img class="img-fluid" src="img/property-6.jpg" alt=""></a>
-                                                </div>
-                                            </div>
-                                        </div> -->
-
-                                <!-- <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                                            <div class="property-item rounded overflow-hidden">
-                                                <div class="position-relative overflow-hidden">
-                                                    <a href=""><img class="img-fluid" src="img/property-6.jpg" alt=""></a>
-                                                </div>
-                                            </div>
-                                        </div> -->
+                    <div class="container-fluid">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6 pb-4 pb-lg-0">
+                                    <img src="img/map2.png" alt="city sky view">
+                                </div>
+                                <!-- <div class="col-lg-6 p-4 pb-lg-0">
+                                    <p class="mb-2"><i class="fa-solid fa-train-subway me-3"></i><b style="color: #000;">Railway Station:</b> 4min(1.2 Km)</p>
+                                    <p class="mb-2"><i class="fa-solid fa-school me-3"></i><b style="color: #000;">School:</b> 4min(1.2 Km)</p>
+                                    <p class="mb-2"><i class="fa-solid fa-hospital me-3"></i><b style="color: #000;">Hospital:</b> 7min(2.6 Km)</p>
+                                    <p class="mb-2"><i class="fa-solid fa-store me-3"></i><b style="color: #000;">Shopping Mall:</b> 6min(1.9 Km)</p>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -481,108 +442,6 @@
 
             <!-- Location Proximities end -->
 
-            <!-- Titupati Developers Legacy start -->
-
-            <div class="container-xxl py-5">
-                <div class="container">
-                    <div class="row g-0 gx-5 align-items-end">
-                        <div class="col-lg-8">
-                            <div class="text-start mx-auto mb-5 wow slideInLeft" data-wow-delay="0.1s">
-                                <h1 class="mb-3">Titupati Developers Legacy</h1>
-                            </div>
-                        </div>
-                    </div>
-
-                    <section id="faq" class="faq section light-background">
-                        <div class="tab-content">
-                            <div id="tab-1" class="tab-pane fade show p-0">
-                                <div class="tab-content">
-                                    <div class="row g-4">
-
-                                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                                            <div class="property-item rounded overflow-hidden">
-                                                <div class="position-relative overflow-hidden">
-                                                    <!-- <a href=""><img class="img-fluid" src="img/property-6.jpg" alt=""></a> -->
-                                                    <h3>5.4 Lac sq ft
-                                                        Developed</h3>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                                            <div class="property-item rounded overflow-hidden">
-                                                <div class="position-relative overflow-hidden">
-                                                    <!-- <a href=""><img class="img-fluid" src="img/property-6.jpg" alt=""></a> -->
-                                                    <h3>XX Lac sq ft under Planning & Development</h3>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                                            <div class="property-item rounded overflow-hidden">
-                                                <div class="position-relative overflow-hidden">
-                                                    <!-- <a href=""><img class="img-fluid" src="img/property-6.jpg" alt=""></a> -->
-                                                    <h3>19 Projects Delivered</h3>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                                            <div class="property-item rounded overflow-hidden">
-                                                <div class="position-relative overflow-hidden">
-                                                    <!-- <a href=""><img class="img-fluid" src="img/property-6.jpg" alt=""></a> -->
-                                                    <h3>Reputed Name in Real Estate & Hospitality </h3>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                                            <div class="property-item rounded overflow-hidden">
-                                                <div class="position-relative overflow-hidden">
-                                                    <!-- <a href=""><img class="img-fluid" src="img/property-6.jpg" alt=""></a> -->
-                                                    <h3>Over 3 decades of Delivering Excellence</h3>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                                            <div class="property-item rounded overflow-hidden">
-                                                <div class="position-relative overflow-hidden">
-                                                    <!-- <a href=""><img class="img-fluid" src="img/property-6.jpg" alt=""></a> -->
-                                                    <h3>XXXX+
-                                                        Happy Families</h3>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                                            <div class="property-item rounded overflow-hidden">
-                                                <div class="position-relative overflow-hidden">
-                                                    <!-- <a href=""><img class="img-fluid" src="img/property-6.jpg" alt=""></a> -->
-                                                    <h3>XX Lac sq ft under Planning & Development</h3>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                                            <div class="property-item rounded overflow-hidden">
-                                                <div class="position-relative overflow-hidden">
-                                                    <!-- <a href=""><img class="img-fluid" src="img/property-6.jpg" alt=""></a> -->
-                                                    <h3>Known for Our Commitment to Quality</h3>
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-
-                                    </div>
-                                </div>
-                    </section>
-
-                </div>
-            </div>
-
-            <!-- Titupati Developers Legacy end -->
 
             <!-- Footer Start -->
             <div class="container-fluid bg-dark text-white-50 footer wow fadeIn" data-wow-delay="0.1s">
@@ -594,22 +453,12 @@
                                 Chinsurah, Hoogly 712101</p>
                             <p class="mb-2"><i class="fa fa-id-card me-3"></i>Registration no.F008092/2022</p>
                             <p class="mb-2"><i class="fa fa-balance-scale me-3"></i>GSTIN: 19AANFT6551C1ZX</p>
-                            <!-- <div class="d-flex pt-2">
-                                        <a class="btn btn-outline-light btn-social" href=""><i
-                                                class="fab fa-twitter"></i></a>
-                                        <a class="btn btn-outline-light btn-social" href=""><i
-                                                class="fab fa-facebook-f"></i></a>
-                                        <a class="btn btn-outline-light btn-social" href=""><i
-                                                class="fab fa-youtube"></i></a>
-                                        <a class="btn btn-outline-light btn-social" href=""><i
-                                                class="fab fa-linkedin-in"></i></a>
-                                    </div> -->
                         </div>
                         <div class="col-md-6 text-center text-md-end mb-3 mb-md-0">
                             <h5 class="text-white mb-4">Project Location</h5>
                             <p class="mb-2"><i class="fa fa-map-marked-alt me-3"></i>G.T. Road, Khadinamore Chinsurah,
                                 Hoogly 712102</p>
-                            <p class="mb-2">The Azure</p>
+                                <p class="mb-2">The Azure</p>
                         </div>
                     </div>
                 </div>
