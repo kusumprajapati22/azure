@@ -47,17 +47,50 @@
             font-size: 20px;
             transition: all 0.3s ease-in-out;
         }
+
         .btn-social:hover {
             transform: scale(1.1);
         }
-        .whatsapp { color: #25D366; border-color: #25D366; }
-        .whatsapp:hover { background: #25D366; color: white; }
-        .facebook { color: #1877F2; border-color: #1877F2; }
-        .facebook:hover { background: #1877F2; color: white; }
-        .linkedin { color: #0077B5; border-color: #0077B5; }
-        .linkedin:hover { background: #0077B5; color: white; }
-        .youtube { color: #FF0000; border-color: #FF0000; }
-        .youtube:hover { background: #FF0000; color: white; }
+
+        .whatsapp {
+            color: #25D366;
+            border-color: #25D366;
+        }
+
+        .whatsapp:hover {
+            background: #25D366;
+            color: white;
+        }
+
+        .facebook {
+            color: #1877F2;
+            border-color: #1877F2;
+        }
+
+        .facebook:hover {
+            background: #1877F2;
+            color: white;
+        }
+
+        .linkedin {
+            color: #0077B5;
+            border-color: #0077B5;
+        }
+
+        .linkedin:hover {
+            background: #0077B5;
+            color: white;
+        }
+
+        .youtube {
+            color: #FF0000;
+            border-color: #FF0000;
+        }
+
+        .youtube:hover {
+            background: #FF0000;
+            color: white;
+        }
 
         .container {
             max-width: 1200px;
@@ -212,91 +245,116 @@
             animation-delay: 1.3s;
         }
 
-        
-.prop-block {
-	margin-bottom: 20px;
-}
 
-.prop-block {
-	-webkit-transition: all 2s ease-in-out;
-	-moz-transition: all 2s ease-in-out;
-	-ms-transition: all 2s ease-in-out;
-	transition: all 2s ease-in-out;
-}
+        .prop-block {
+            margin-bottom: 20px;
+        }
 
-.prop-block:hover img {
-	-webkit-transition: all 0.8s ease-in-out;
-	-moz-transition: all 0.8s ease-in-out;
-	-ms-transition: all 0.8s ease-in-out;
-	transition: all 0.8s ease-in-out;
-	transform: scale(1.03);
-}
+        .prop-block {
+            -webkit-transition: all 2s ease-in-out;
+            -moz-transition: all 2s ease-in-out;
+            -ms-transition: all 2s ease-in-out;
+            transition: all 2s ease-in-out;
+        }
 
-.prop-block section {
-	text-transform: uppercase;
-	font-size: 12px;
-	font-weight: 400;
-	line-height: 16px;
-	letter-spacing: 2px;
-	padding: 5px 0;
-	display: flex;
-	position: relative;
-}
+        .prop-block:hover img {
+            -webkit-transition: all 0.8s ease-in-out;
+            -moz-transition: all 0.8s ease-in-out;
+            -ms-transition: all 0.8s ease-in-out;
+            transition: all 0.8s ease-in-out;
+            transform: scale(1.03);
+        }
 
-.prop-block:hover section {
-	/* -webkit-transition: all 0.2s ease-in-out; */
-	-moz-transition: all 0.2s ease-in-out;
-	-ms-transition: all 0.2s ease-in-out;
-	/* transition: all 0.2s ease-in-out; */
-	/* margin-top: 5px; */
-}
+        .prop-block section {
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 16px;
+            letter-spacing: 2px;
+            padding: 5px 0;
+            display: flex;
+            position: relative;
+        }
 
-.prop-block:hover section:after {
-	width: 110px;
-	transition: all 1s ease-in-out;
-}
+        .prop-block:hover section {
+            /* -webkit-transition: all 0.2s ease-in-out; */
+            -moz-transition: all 0.2s ease-in-out;
+            -ms-transition: all 0.2s ease-in-out;
+            /* transition: all 0.2s ease-in-out; */
+            /* margin-top: 5px; */
+        }
 
-.prop-block section:after {
-	display: block;
-	content: "";
-	height: 1px;
-	width: 80px;
-	background-color: #9d9d9c;
-	right: 0;
-	position: absolute;
-	top: 17px;
-}
+        .prop-block:hover section:after {
+            width: 110px;
+            transition: all 1s ease-in-out;
+        }
 
-.prop-block section span.comm-name {
-	padding-left: 10px;
-	margin-left: 8px;
-	position: relative;
-	padding-right: 90px;
-}
+        .prop-block section:after {
+            display: block;
+            content: "";
+            height: 1px;
+            width: 80px;
+            background-color: #9d9d9c;
+            right: 0;
+            position: absolute;
+            top: 17px;
+        }
 
-.prop-block section span.comm-name:before {
-	border-left: 1px solid #232323;
-	display: inline-block;
-	content: "";
-	width: 1px;
-	height: 85%;
-	position: absolute;
-	left: 0;
-	top: 2px;
-}
+        .prop-block section span.comm-name {
+            padding-left: 10px;
+            margin-left: 8px;
+            position: relative;
+            padding-right: 90px;
+        }
 
+        .prop-block section span.comm-name:before {
+            border-left: 1px solid #232323;
+            display: inline-block;
+            content: "";
+            width: 1px;
+            height: 85%;
+            position: absolute;
+            left: 0;
+            top: 2px;
+        }
+        .modal {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Full height */
+        }
+
+        .modal-content {
+            background-color: black; /* Set background color to black */
+            color: white; /* Set text color to white for contrast */
+        }
+
+        .modal-body {
+            padding: 0; /* Remove padding to make the video fill the modal */
+        }
+
+        .modal-body video {
+            width: 100vw; /* Full width of the viewport */
+            height: auto; /* Maintain aspect ratio */
+            max-height: 100vh; /* Limit height to viewport height */
+            object-fit: cover; /* Cover the area while maintaining aspect ratio */
+        }
+
+        .modal-header .close {
+            color: white; /* Change close button color to white */
+        }
     </style>
 </head>
 
 <body>
     <div class="container-xxl bg-white p-0">
         <!-- Spinner Start -->
-        <!-- <div id="spinner"
+        <div id="spinner"
             class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
                 <span class="sr-only">Loading...</span>
             </div>
-        </div> -->
+        </div>
         <!-- Spinner End -->
 
         <!-- Top Header start -->
@@ -308,9 +366,15 @@
                         <a href="story.html" class="nav-item nav-link"> Video Gallery</a>
                     </div>
                     <div class="d-flex justify-content-center gap-3">
-                        <a class="btn btn-outline-light btn-social facebook" href="https://www.facebook.com/TheAzureChinsurah" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social linkedin" href="https://www.linkedin.com/in/sanjay-naiknaware-ba927534b" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="btn btn-outline-light btn-social youtube" href="https://youtu.be/rm0ZMur5ZAY?feature=shared" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social facebook"
+                            href="https://www.facebook.com/TheAzureChinsurah" target="_blank"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social linkedin"
+                            href="https://www.linkedin.com/in/sanjay-naiknaware-ba927534b" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social youtube"
+                            href="https://youtu.be/rm0ZMur5ZAY?feature=shared" target="_blank"><i
+                                class="fab fa-youtube"></i></a>
                     </div>
                 </div>
             </nav>
@@ -353,18 +417,19 @@
                     <div class="carousel-item active">
                         <img src="img/carousel-3.jpg" class="img-fluid w-100" alt="First slide" style="height:600px;" />
                         <div class="carousel-caption">
-                            <h1 class="display-6 text-white mb-4 fadeInUp animate__animated" 
-                              data-animation="fadeInUp" data-delay="0.1s" style="animation-delay: 0.1s">
-                              MAKING A DIFFERENCE TO THE <i>LIFESTYLE</i></h1>
+                            <h1 class="display-6 text-white mb-4 fadeInUp animate__animated" data-animation="fadeInUp"
+                                data-delay="0.1s" style="animation-delay: 0.1s">
+                                MAKING A DIFFERENCE TO THE <i>LIFESTYLE</i></h1>
                         </div>
                     </div>
 
                     <!--Second Carousel-->
                     <div class="carousel-item">
-                        <img src="img/carousel-2.jpg" class="img-fluid w-100" alt="Second slide" style="height:600px;" />
+                        <img src="img/carousel-2.jpg" class="img-fluid w-100" alt="Second slide"
+                            style="height:600px;" />
                         <div class="carousel-caption">
-                            <h1 class="display-6 text-white mb-4 fadeInUp animate__animated"
-                                data-animation="fadeInUp" data-delay="0.1s" style="animation-delay: 0.1s;">
+                            <h1 class="display-6 text-white mb-4 fadeInUp animate__animated" data-animation="fadeInUp"
+                                data-delay="0.1s" style="animation-delay: 0.1s;">
                                 CRAFTING MEMORABLE <i>EXPERIENCE</i>
                             </h1>
                         </div>
@@ -374,25 +439,26 @@
                     <div class="carousel-item">
                         <img src="img/carousel-4.jpg" class="img-fluid w-100" alt="Third slide" style="height:600px;" />
                         <div class="carousel-caption">
-                            <h1 class="display-7 text-white mb-4 fadeInUp animate__animated"
-                                data-animation="fadeInUp" data-delay="0.1s" style="animation-delay: 1.3s;">
+                            <h1 class="display-7 text-white mb-4 fadeInUp animate__animated" data-animation="fadeInUp"
+                                data-delay="0.1s" style="animation-delay: 1.3s;">
                                 IT'S ONLY WHEN YOU UNDERSTAND YOUR <i>CUSTOMERS</i>
                             </h1>
                         </div>
                     </div>
 
-                     <!--Fourth Carousel-->
+                    <!--Fourth Carousel-->
                     <div class="carousel-item">
-                        <img src="img/carousel-5.jpg" class="img-fluid w-100" alt="Second slide" style="height:600px;" />
+                        <img src="img/carousel-5.jpg" class="img-fluid w-100" alt="Second slide"
+                            style="height:600px;" />
                         <div class="carousel-caption">
-                            <h1 class="display-7 text-white mb-4 fadeInUp animate__animated"
-                                data-animation="fadeInUp" data-delay="0.1s" style="animation-delay: 1.3s;">
+                            <h1 class="display-7 text-white mb-4 fadeInUp animate__animated" data-animation="fadeInUp"
+                                data-delay="0.1s" style="animation-delay: 1.3s;">
                                 THAT YOU ARE ABLE TO GO BEYOND THEIR <i>EXPECTATIONS</i>
                             </h1>
                         </div>
                     </div>
 
-                     <!--Fifth Carousel-->
+                    <!--Fifth Carousel-->
                     <div class="carousel-item">
                         <img src="img/carousel-6.png" class="img-fluid" alt="Second slide" style="height:600px;" />
                         <div class="carousel-caption">
@@ -419,9 +485,11 @@
                                 <div class="row g-4">
 
                                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                                        <div class="prop-block scroll-animate" data-wow-duration="3s" data-wow-delay="2s">
-                                            <a target="_blank"  href="">
-                                                <a href="citysky.html"><img class="img-fluid" src="img/city sky view.png" alt=""></a>
+                                        <div class="prop-block scroll-animate" data-wow-duration="3s"
+                                            data-wow-delay="2s">
+                                            <a target="_blank" href="">
+                                                <a href="citysky.html"><img class="img-fluid"
+                                                        src="img/city sky view.png" alt=""></a>
                                             </a>
                                             <section>
                                                 <h5><a href="citysky.html">CITY SKY VIEW</a></h5>
@@ -431,9 +499,11 @@
                                     </div>
 
                                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                                        <div class="prop-block scroll-animate" data-wow-duration="3s" data-wow-delay="2s">
-                                            <a target="_blank"  href="">
-                                                <a href="azure.html"><img class="img-fluid" src="img/azure.png" alt=""></a>
+                                        <div class="prop-block scroll-animate" data-wow-duration="3s"
+                                            data-wow-delay="2s">
+                                            <a target="_blank" href="">
+                                                <a href="azure.html"><img class="img-fluid" src="img/azure.png"
+                                                        alt=""></a>
                                             </a>
                                             <section>
                                                 <h5><a href="azure.html">The Azure</a></h5>
@@ -444,9 +514,11 @@
 
 
                                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                                        <div class="prop-block scroll-animate" data-wow-duration="3s" data-wow-delay="2s">
-                                            <a target="_blank"  href="">
-                                                <a href="development.html"><img class="img-fluid" src="img/rupali.png" alt=""></a>
+                                        <div class="prop-block scroll-animate" data-wow-duration="3s"
+                                            data-wow-delay="2s">
+                                            <a target="_blank" href="">
+                                                <a href="development.html"><img class="img-fluid" src="img/rupali.png"
+                                                        alt=""></a>
                                             </a>
                                             <section>
                                                 <h5>Rupali Arcade</h5>
@@ -711,7 +783,7 @@
                         <h5 class="text-white mb-4">Project Location</h5>
                         <p class="mb-2"><i class="fa fa-map-marked-alt me-3"></i>G.T. Road, Khadinamore Chinsurah,
                             Hoogly 712102</p>
-                            <p class="mb-2">The Azure</p>
+                        <p class="mb-2">The Azure</p>
                     </div>
 
                 </div>
@@ -733,6 +805,33 @@
             </div>
         </div>
         <!-- Footer End -->
+
+        <div class="container-xxl bg-white p-0">
+            <!-- Your existing content here -->
+    
+            <!-- Popup Modal Start -->
+            <div id="popupModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="popupModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="popupModalLabel">Welcome to Tirupati Developer</h5>
+                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <video controls class="img-fluid" autoplay muted>
+                                <source src="img/AZURE.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Popup Modal End -->
 
 
         <!-- Back to Top -->
@@ -780,6 +879,9 @@
             });
             event.target.parentElement.classList.add('active');
         }
+        $(document).ready(function() {
+                $('#popupModal').modal('show');
+            });
     </script>
 </body>
 
